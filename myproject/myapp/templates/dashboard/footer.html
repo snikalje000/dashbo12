@@ -1,0 +1,142 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudstrats</title>
+    <meta name="description" content="We help founders build enduring companies.">
+
+    <!--navbar-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../static/css/nav.css"> -->
+ 
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- fontawesom -->
+    <script src="https://kit.fontawesome.com/126a21f2e6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- card -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom -->
+    <link rel="stylesheet" href="{% static 'css/dashcss/style.css' %}">
+    
+
+    <!--email  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("rLNBKrl2Ty74t6rUu");
+      })();
+    </script>
+
+
+  </head>
+
+  <body>
+   
+
+   
+
+    <!-- footer-->
+    <footer class="new_footer_area bg_color container-fluid " style="--bs-gutter-x:0rem">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row" style="text-align:center;">
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Company</h3>
+                <ul class="list-unstyled f_list">
+                    <li><a href="#">Accelerate</a></li>
+                    <li><a href="#">Transformation</a></li>
+                    <li><a href="#">NexxeN</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Support</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">Privacy Statement</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                  <li><a href="#">SItemap</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                <a class="twitter-timeline" data-width="220" data-height="260" href="https://twitter.com/CloudStrats?ref_src=twsrc%5Etfw">Tweets by CloudStrats</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                <div class="f_social_icon">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+                  <a href="#" class="fab fa-pinterest"></a>
+                  
+                </div>
+                <form _lpchecked="5" class="fm mt-4 ml-5">
+                    <input type="email" id="toName" placeholder="Enter Your Email" required
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" style="border-radius: 5px; padding:8px;">
+  
+                    <button onclick="sendMail()" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      style="padding: 8px; width:100px; border-radius:5px;">Connect</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+  </body>
+
+</html>
